@@ -18,6 +18,21 @@
         </p>
       </section>
 
+      <section id="stats" class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+        <div class="p-4 bg-white rounded-2xl shadow flex flex-col items-center">
+          <div class="text-sm text-gray-500">Dernier débit</div>
+          <div id="stat-latest" class="text-3xl font-bold text-sky-600">--</div>
+        </div>
+        <div class="p-4 bg-white rounded-2xl shadow flex flex-col items-center">
+          <div class="text-sm text-gray-500">Moyenne</div>
+          <div id="stat-average" class="text-3xl font-bold text-sky-600">--</div>
+        </div>
+        <div class="p-4 bg-white rounded-2xl shadow flex flex-col items-center">
+          <div class="text-sm text-gray-500">Tests totaux</div>
+          <div id="stat-count" class="text-3xl font-bold text-sky-600">--</div>
+        </div>
+      </section>
+
       <section class="bg-white shadow-xl rounded-2xl p-6 mb-8">
         <div class="flex justify-between items-center mb-4">
           <h2 class="text-xl font-semibold text-sky-700">Graphique du Débit</h2>
@@ -110,6 +125,15 @@
             .join('');
 
           $('#dataTable').html(tableRows);
+
+          const count = data.length;
+          document.getElementById('stat-count').textContent = count;
+          if (count > 0) {
+            const latest = data[count - 1].download_mbps;
+            const average = Math.round(data.reduce((sum, d) => sum + d.download_mbps, 0) / count);
+            document.getElementById('stat-latest').textContent = latest;
+            document.getElementById('stat-average').textContent = average;
+          }
         });
       }
 
