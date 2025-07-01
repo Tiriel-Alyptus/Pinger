@@ -34,9 +34,12 @@
       </section>
 
       <section class="bg-white shadow-xl rounded-2xl p-6 mb-8">
-        <div class="flex justify-between items-center mb-4">
+        <div class="flex flex-wrap gap-2 justify-between items-center mb-4">
           <h2 class="text-xl font-semibold text-sky-700">Graphique du Débit</h2>
-          <button id="downloadCSV" class="bg-sky-600 text-white px-4 py-2 rounded hover:bg-sky-700 transition">📄 Export CSV</button>
+          <div class="flex gap-2">
+            <button id="downloadCSV" class="bg-sky-600 text-white px-4 py-2 rounded hover:bg-sky-700 transition">📄 Export CSV</button>
+            <button id="clearOld" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition">🗑️ Nettoyer (>7j)</button>
+          </div>
         </div>
         <canvas id="speedChart" height="100"></canvas>
       </section>
@@ -50,6 +53,7 @@
                 <th class="px-4 py-2">Horodatage</th>
                 <th class="px-4 py-2">Débit (Mbps)</th>
                 <th class="px-4 py-2">État</th>
+                <th class="px-4 py-2">Action</th>
               </tr>
             </thead>
             <tbody id="dataTable" class="text-gray-700 divide-y divide-gray-200">
@@ -120,6 +124,9 @@
                   <td class="px-4 py-2">
                     <span class="px-2 py-1 rounded-full text-sm font-medium ${badgeClass}">${label}</span>
                   </td>
+                  <td class="px-4 py-2 text-right">
+                    <button data-ts="${d.timestamp}" class="delete-entry text-red-600 hover:underline">Supprimer</button>
+                  </td>
                 </tr>`;
             })
             .join('');
@@ -165,6 +172,16 @@
       }
 
       document.getElementById('downloadCSV').addEventListener('click', downloadCSV);
+      document.getElementById('clearOld').addEventListener('click', async () => {
+        await fetch('/api/data/old', { method: 'DELETE' });
+        updateData();
+      });
+
+      $(document).on('click', '.delete-entry', async function() {
+        const ts = $(this).data('ts');
+        await fetch(`/api/data/${ts}`, { method: 'DELETE' });
+        updateData();
+      });
       setInterval(updateData, 5000);
       updateData();
     </script>
