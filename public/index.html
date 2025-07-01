@@ -44,6 +44,16 @@
             <button id="clearOld" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition">🗑️ Nettoyer (>7j)</button>
           </div>
         </div>
+        <div id="rangeButtons" class="flex flex-wrap gap-2 mb-4">
+          <button class="range-btn px-3 py-1 border rounded" data-range="3600000">1h</button>
+          <button class="range-btn px-3 py-1 border rounded" data-range="10800000">3h</button>
+          <button class="range-btn px-3 py-1 border rounded" data-range="43200000">12h</button>
+          <button class="range-btn px-3 py-1 border rounded" data-range="86400000">24h</button>
+          <button class="range-btn px-3 py-1 border rounded" data-range="172800000">48h</button>
+          <button class="range-btn px-3 py-1 border rounded" data-range="604800000">Semaine</button>
+          <button class="range-btn px-3 py-1 border rounded" data-range="2592000000">Mois</button>
+          <button class="range-btn px-3 py-1 border rounded" data-range="all">Tout</button>
+        </div>
         <canvas id="speedChart" height="100"></canvas>
       </section>
 
@@ -76,12 +86,20 @@
     <script>
       let chart;
       let currentData = [];
+      let currentRange = 24 * 60 * 60 * 1000; // 24h par défaut
+
+      function filterRange(data) {
+        if (!currentRange) return data;
+        const limit = Date.now() - currentRange;
+        return data.filter(d => new Date(d.timestamp).getTime() >= limit);
+      }
 
       function updateData() {
         $.get('/api/data', function (data) {
-          currentData = data;
-          const labels = data.map((d) => new Date(d.timestamp).toLocaleTimeString());
-          const speeds = data.map((d) => d.download_mbps);
+          const filtered = filterRange(data);
+          currentData = filtered;
+          const labels = filtered.map((d) => new Date(d.timestamp).toLocaleTimeString());
+          const speeds = filtered.map((d) => d.download_mbps);
 
           if (!chart) {
             chart = new Chart(document.getElementById('speedChart'), {
@@ -117,7 +135,7 @@
             chart.update();
           }
 
-          const tableRows = data
+          const tableRows = filtered
             .slice()
             .reverse()
             .map((d) => {
@@ -142,11 +160,11 @@
 
           $('#dataTable').html(tableRows);
 
-          const count = data.length;
+          const count = filtered.length;
           document.getElementById('stat-count').textContent = count;
           if (count > 0) {
-            const latest = data[count - 1].download_mbps;
-            const average = Math.round(data.reduce((sum, d) => sum + d.download_mbps, 0) / count);
+            const latest = filtered[count - 1].download_mbps;
+            const average = Math.round(filtered.reduce((sum, d) => sum + d.download_mbps, 0) / count);
             document.getElementById('stat-latest').textContent = latest;
             document.getElementById('stat-average').textContent = average;
           }
@@ -228,6 +246,19 @@
         await fetch(`/api/data/${ts}`, { method: 'DELETE' });
         updateData();
       });
+
+      document.querySelectorAll('.range-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          currentRange = btn.dataset.range === 'all' ? null : parseInt(btn.dataset.range);
+          document.querySelectorAll('.range-btn').forEach(b => b.classList.remove('bg-sky-600','text-white'));
+          btn.classList.add('bg-sky-600','text-white');
+          updateData();
+        });
+      });
+
+      // sélection par défaut
+      const defaultBtn = document.querySelector('.range-btn[data-range="86400000"]');
+      if (defaultBtn) defaultBtn.classList.add('bg-sky-600','text-white');
       setInterval(updateData, 5000);
       updateData();
     </script>
