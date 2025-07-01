@@ -26,7 +26,14 @@ Pour lancer l'application dans un conteneur Docker :
 
 ```bash
 docker build -t pinger .
-docker run -p 5000:5000 pinger
+docker run -p 5000:5000 -e PORT=5000 pinger
+```
+
+Vous pouvez également utiliser **docker-compose** pour faciliter le
+démarrage :
+
+```bash
+docker compose up
 ```
 
 ## Fonctionnement

@@ -4,7 +4,8 @@ import path from 'path';
 import { runTest } from './index.mjs';
 
 const app = express();
-const PORT = 5000;
+// Allow overriding the port via environment variable when running in Docker
+const PORT = process.env.PORT || 5000;
 app.use(express.json());
 
 app.use(express.static('public'));
