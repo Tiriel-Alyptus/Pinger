@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📊 Statistiques de Débit Internet</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gradient-to-tr from-sky-50 to-white min-h-screen text-gray-800">
+    <main class="max-w-6xl mx-auto p-6">
+      <section class="mb-8 text-center">
+        <h1 class="text-4xl font-extrabold text-sky-600 mb-2">📶 Tableau de Bord du Débit Internet
+        </h1>
+        <p class="text-gray-500 text-lg">
+          Suivi en temps réel de vos performances de connexion avec Fast.com
+        </p>
+      </section>
+
+      <section class="bg-white shadow-xl rounded-2xl p-6 mb-8">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-xl font-semibold text-sky-700">Graphique du Débit</h2>
+          <button id="downloadCSV" class="bg-sky-600 text-white px-4 py-2 rounded hover:bg-sky-700 transition">📄 Export CSV</button>
+        </div>
+        <canvas id="speedChart" height="100"></canvas>
+      </section>
+
+      <section class="bg-white shadow-xl rounded-2xl p-6">
+        <h2 class="text-xl font-semibold text-sky-700 mb-4">Historique des Mesures</h2>
+        <div class="overflow-auto rounded-lg">
+          <table class="min-w-full table-auto border-collapse">
+            <thead class="bg-sky-700 text-white text-left">
+              <tr>
+                <th class="px-4 py-2">Horodatage</th>
+                <th class="px-4 py-2">Débit (Mbps)</th>
+                <th class="px-4 py-2">État</th>
+              </tr>
+            </thead>
+            <tbody id="dataTable" class="text-gray-700 divide-y divide-gray-200">
+              <!-- Injecté par JavaScript -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      let chart;
+      let currentData = [];
+
+      function updateData() {
+        $.get('/api/data', function (data) {
+          currentData = data;
+          const labels = data.map((d) => new Date(d.timestamp).toLocaleTimeString());
+          const speeds = data.map((d) => d.download_mbps);
+
+          if (!chart) {
+            chart = new Chart(document.getElementById('speedChart'), {
+              type: 'line',
+              data: {
+                labels: labels,
+                datasets: [
+                  {
+                    label: 'Débit Mbps',
+                    data: speeds,
+                    borderColor: '#0ea5e9',
+                    backgroundColor: 'rgba(14,165,233,0.1)',
+                    fill: true,
+                    tension: 0.4,
+                    pointRadius: 3,
+                    pointHoverRadius: 6,
+                  },
+                ],
+              },
+              options: {
+                responsive: true,
+                scales: {
+                  y: {
+                    beginAtZero: true,
+                    ticks: { stepSize: 10 },
+                  },
+                },
+              },
+            });
+          } else {
+            chart.data.labels = labels;
+            chart.data.datasets[0].data = speeds;
+            chart.update();
+          }
+
+          const tableRows = data
+            .slice()
+            .reverse()
+            .map((d) => {
+              const speed = d.download_mbps;
+              let badgeClass = 'bg-red-100 text-red-800', label = 'Lent';
+              if (speed >= 100) badgeClass = 'bg-green-100 text-green-800', label = 'Rapide';
+              else if (speed >= 30) badgeClass = 'bg-yellow-100 text-yellow-800', label = 'Moyen';
+
+              return `
+                <tr>
+                  <td class="px-4 py-2 whitespace-nowrap">${new Date(d.timestamp).toLocaleString()}</td>
+                  <td class="px-4 py-2 font-semibold">${speed}</td>
+                  <td class="px-4 py-2">
+                    <span class="px-2 py-1 rounded-full text-sm font-medium ${badgeClass}">${label}</span>
+                  </td>
+                </tr>`;
+            })
+            .join('');
+
+          $('#dataTable').html(tableRows);
+        });
+      }
+
+      function downloadCSV() {
+        const header = ['Horodatage', 'Débit (Mbps)', 'État'];
+        const rows = currentData.map(row => {
+          const speed = row.download_mbps;
+          let state = 'Lent';
+          if (speed >= 100) state = 'Rapide';
+          else if (speed >= 30) state = 'Moyen';
+
+          return [
+            new Date(row.timestamp).toLocaleString(),
+            speed,
+            state
+          ];
+        });
+
+        const table = [header, ...rows];
+        const csv = table.map(row => row.map(cell => `"${cell}"`).join(";")) // point-virgule = séparateur de colonnes Excel FR
+                      .join("\r\n");
+
+        const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.setAttribute('href', url);
+        link.setAttribute('download', 'statistiques_debit.csv');
+        link.click();
+      }
+
+      document.getElementById('downloadCSV').addEventListener('click', downloadCSV);
+      setInterval(updateData, 5000);
+      updateData();
+    </script>
+  </body>
+</html>
