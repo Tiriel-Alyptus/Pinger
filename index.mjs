@@ -96,7 +96,10 @@ export async function runTest() {
     if (dataArr.length > 500) dataArr = dataArr.slice(-500); // limite à 500 entrées
 
     fs.writeFileSync(dataPath, JSON.stringify(dataArr, null, 2));
+
+    return result;
   } catch (error) {
     console.error("❌ Test échoué : ", error.message);
+    return null;
   }
 }
