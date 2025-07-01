@@ -1,6 +1,7 @@
 import express from 'express';
 import fs from 'fs';
 import path from 'path';
+import { Readable } from 'stream';
 import { runTest } from './index.mjs';
 
 const app = express();
@@ -9,6 +10,27 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 
 app.use(express.static('public'));
+
+// Fichier de test de débit (~40MB)
+app.get('/speedtest-file', (req, res) => {
+  const size = 40 * 1024 * 1024; // 40MB
+  res.setHeader('Content-Type', 'application/octet-stream');
+  res.setHeader('Content-Disposition', 'attachment; filename="speedtest.bin"');
+
+  const chunkSize = 64 * 1024;
+  let sent = 0;
+  const stream = new Readable({
+    read() {
+      if (sent >= size) {
+        this.push(null);
+      } else {
+        sent += chunkSize;
+        this.push(Buffer.alloc(chunkSize));
+      }
+    }
+  });
+  stream.pipe(res);
+});
 
 
 // API pour récupérer les données
