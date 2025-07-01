@@ -64,6 +64,16 @@ app.delete('/api/data/:timestamp', (req, res) => {
   res.json({ removed: dataArr.length - filtered.length });
 });
 
+// Lancer un test de débit à la demande
+app.post('/api/test', async (req, res) => {
+  const result = await runTest();
+  if (result) {
+    res.json(result);
+  } else {
+    res.status(500).json({ error: 'Test échoué' });
+  }
+});
+
 // Page principale
 app.get('/', (req, res) => {
   res.sendFile(path.resolve('./public/index.html'));

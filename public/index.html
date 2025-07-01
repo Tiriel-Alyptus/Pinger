@@ -36,8 +36,10 @@
       <section class="bg-white shadow-xl rounded-2xl p-6 mb-8">
         <div class="flex flex-wrap gap-2 justify-between items-center mb-4">
           <h2 class="text-xl font-semibold text-sky-700">Graphique du Débit</h2>
-          <div class="flex gap-2">
+          <div class="flex flex-wrap gap-2">
+            <button id="testNow" class="bg-sky-600 text-white px-4 py-2 rounded hover:bg-sky-700 transition">🚀 Tester maintenant</button>
             <button id="downloadCSV" class="bg-sky-600 text-white px-4 py-2 rounded hover:bg-sky-700 transition">📄 Export CSV</button>
+            <button id="downloadJSON" class="bg-sky-600 text-white px-4 py-2 rounded hover:bg-sky-700 transition">📁 Export JSON</button>
             <button id="clearOld" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition">🗑️ Nettoyer (>7j)</button>
           </div>
         </div>
@@ -171,7 +173,21 @@
         link.click();
       }
 
+      function downloadJSON() {
+        const blob = new Blob([JSON.stringify(currentData, null, 2)], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.setAttribute('href', url);
+        link.setAttribute('download', 'statistiques_debit.json');
+        link.click();
+      }
+
       document.getElementById('downloadCSV').addEventListener('click', downloadCSV);
+      document.getElementById('downloadJSON').addEventListener('click', downloadJSON);
+      document.getElementById('testNow').addEventListener('click', async () => {
+        await fetch('/api/test', { method: 'POST' });
+        updateData();
+      });
       document.getElementById('clearOld').addEventListener('click', async () => {
         await fetch('/api/data/old', { method: 'DELETE' });
         updateData();

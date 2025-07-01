@@ -32,3 +32,5 @@ docker run -p 5000:5000 pinger
 ## Fonctionnement
 
 Un test de débit est effectué au démarrage puis toutes les minutes. Les mesures sont enregistrées dans `data.json` et présentées sous forme de graphique, de tableau et de statistiques.
+
+Vous pouvez lancer un test manuel via le bouton **"Tester maintenant"** de l'interface et exporter les résultats au format CSV ou JSON.
