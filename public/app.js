@@ -1,84 +1,78 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>📊 Statistiques de Débit Internet</title>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gradient-to-tr from-sky-50 to-white min-h-screen text-gray-800">
-<main class="max-w-6xl mx-auto p-6">
-  <section class="mb-8 text-center">
-    <h1 class="text-4xl font-extrabold text-sky-600 mb-2">📶 Tableau de Bord du Débit Internet</h1>
-    <p class="text-gray-500 text-lg">Suivi en temps réel de vos performances de connexion avec Fast.com</p>
-  </section>
+// Build UI dynamically using Tailwind CSS v4
+// This script reproduces the previous HTML interface
 
-  <section id="stats" class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
-    <div class="p-4 bg-white rounded-2xl shadow flex flex-col items-center">
-      <div class="text-sm text-gray-500">Dernier débit</div>
-      <div id="stat-latest" class="text-3xl font-bold text-sky-600">--</div>
-    </div>
-    <div class="p-4 bg-white rounded-2xl shadow flex flex-col items-center">
-      <div class="text-sm text-gray-500">Moyenne</div>
-      <div id="stat-average" class="text-3xl font-bold text-sky-600">--</div>
-    </div>
-    <div class="p-4 bg-white rounded-2xl shadow flex flex-col items-center">
-      <div class="text-sm text-gray-500">Tests totaux</div>
-      <div id="stat-count" class="text-3xl font-bold text-sky-600">--</div>
-    </div>
-  </section>
+document.addEventListener('DOMContentLoaded', () => {
+  const app = document.getElementById('app');
+  app.innerHTML = `
+  <main class="max-w-6xl mx-auto p-6 text-gray-800">
+    <section class="mb-8 text-center">
+      <h1 class="text-4xl font-extrabold text-sky-600 mb-2">📶 Tableau de Bord du Débit Internet</h1>
+      <p class="text-gray-500 text-lg">Suivi en temps réel de vos performances de connexion avec Fast.com</p>
+    </section>
 
-  <section class="bg-white shadow-xl rounded-2xl p-6 mb-8">
-    <div class="flex flex-wrap gap-2 justify-between items-center mb-4">
-      <h2 class="text-xl font-semibold text-sky-700">Graphique du Débit</h2>
-      <div class="flex flex-wrap gap-2">
-        <button id="testNow" class="bg-sky-600 text-white px-4 py-2 rounded hover:bg-sky-700 transition">🚀 Tester maintenant</button>
-        <button id="downloadCSV" class="bg-sky-600 text-white px-4 py-2 rounded hover:bg-sky-700 transition">📄 Export CSV</button>
-        <button id="downloadJSON" class="bg-sky-600 text-white px-4 py-2 rounded hover:bg-sky-700 transition">📁 Export JSON</button>
-        <button id="localTestBtn" class="bg-sky-600 text-white px-4 py-2 rounded hover:bg-sky-700 transition">⚡ Test local</button>
-        <button id="clearOld" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition">🗑️ Nettoyer (>7j)</button>
+    <section id="stats" class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+      <div class="p-4 bg-white rounded-2xl shadow flex flex-col items-center">
+        <div class="text-sm text-gray-500">Dernier débit</div>
+        <div id="stat-latest" class="text-3xl font-bold text-sky-600">--</div>
       </div>
-    </div>
-    <div id="rangeButtons" class="flex flex-wrap gap-2 mb-4">
-      <button class="range-btn px-3 py-1 border rounded" data-range="3600000">1h</button>
-      <button class="range-btn px-3 py-1 border rounded" data-range="10800000">3h</button>
-      <button class="range-btn px-3 py-1 border rounded" data-range="43200000">12h</button>
-      <button class="range-btn px-3 py-1 border rounded" data-range="86400000">24h</button>
-      <button class="range-btn px-3 py-1 border rounded" data-range="172800000">48h</button>
-      <button class="range-btn px-3 py-1 border rounded" data-range="604800000">Semaine</button>
-      <button class="range-btn px-3 py-1 border rounded" data-range="2592000000">Mois</button>
-      <button class="range-btn px-3 py-1 border rounded" data-range="all">Tout</button>
-    </div>
-    <canvas id="speedChart" height="100"></canvas>
-  </section>
+      <div class="p-4 bg-white rounded-2xl shadow flex flex-col items-center">
+        <div class="text-sm text-gray-500">Moyenne</div>
+        <div id="stat-average" class="text-3xl font-bold text-sky-600">--</div>
+      </div>
+      <div class="p-4 bg-white rounded-2xl shadow flex flex-col items-center">
+        <div class="text-sm text-gray-500">Tests totaux</div>
+        <div id="stat-count" class="text-3xl font-bold text-sky-600">--</div>
+      </div>
+    </section>
 
-  <section id="localTestSection" class="bg-white shadow-xl rounded-2xl p-6 mb-8 hidden">
-    <h2 class="text-xl font-semibold text-sky-700 mb-4">Résultat Speedtest Local</h2>
-    <p>Ping : <span id="localPing">--</span> ms</p>
-    <p>Débit : <span id="localSpeed">--</span> Mbps</p>
-  </section>
+    <section class="bg-white shadow-xl rounded-2xl p-6 mb-8">
+      <div class="flex flex-wrap gap-2 justify-between items-center mb-4">
+        <h2 class="text-xl font-semibold text-sky-700">Graphique du Débit</h2>
+        <div class="flex flex-wrap gap-2">
+          <button id="testNow" class="bg-sky-600 text-white px-4 py-2 rounded hover:bg-sky-700 transition">🚀 Tester maintenant</button>
+          <button id="downloadCSV" class="bg-sky-600 text-white px-4 py-2 rounded hover:bg-sky-700 transition">📄 Export CSV</button>
+          <button id="downloadJSON" class="bg-sky-600 text-white px-4 py-2 rounded hover:bg-sky-700 transition">📁 Export JSON</button>
+          <button id="localTestBtn" class="bg-sky-600 text-white px-4 py-2 rounded hover:bg-sky-700 transition">⚡ Test local</button>
+          <button id="clearOld" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition">🗑️ Nettoyer (>7j)</button>
+        </div>
+      </div>
+      <div id="rangeButtons" class="flex flex-wrap gap-2 mb-4">
+        <button class="range-btn px-3 py-1 border rounded" data-range="3600000">1h</button>
+        <button class="range-btn px-3 py-1 border rounded" data-range="10800000">3h</button>
+        <button class="range-btn px-3 py-1 border rounded" data-range="43200000">12h</button>
+        <button class="range-btn px-3 py-1 border rounded" data-range="86400000">24h</button>
+        <button class="range-btn px-3 py-1 border rounded" data-range="172800000">48h</button>
+        <button class="range-btn px-3 py-1 border rounded" data-range="604800000">Semaine</button>
+        <button class="range-btn px-3 py-1 border rounded" data-range="2592000000">Mois</button>
+        <button class="range-btn px-3 py-1 border rounded" data-range="all">Tout</button>
+      </div>
+      <canvas id="speedChart" height="100"></canvas>
+    </section>
 
-  <section class="bg-white shadow-xl rounded-2xl p-6">
-    <h2 class="text-xl font-semibold text-sky-700 mb-4">Historique des Mesures</h2>
-    <div class="overflow-auto rounded-lg">
-      <table class="min-w-full table-auto border-collapse">
-        <thead class="bg-sky-700 text-white text-left">
-          <tr>
-            <th class="px-4 py-2">Horodatage</th>
-            <th class="px-4 py-2">Débit (Mbps)</th>
-            <th class="px-4 py-2">État</th>
-            <th class="px-4 py-2">Action</th>
-          </tr>
-        </thead>
-        <tbody id="dataTable" class="text-gray-700 divide-y divide-gray-200"></tbody>
-      </table>
-    </div>
-  </section>
-</main>
+    <section id="localTestSection" class="bg-white shadow-xl rounded-2xl p-6 mb-8 hidden">
+      <h2 class="text-xl font-semibold text-sky-700 mb-4">Résultat Speedtest Local</h2>
+      <p>Ping : <span id="localPing">--</span> ms</p>
+      <p>Débit : <span id="localSpeed">--</span> Mbps</p>
+    </section>
 
-<script>
+    <section class="bg-white shadow-xl rounded-2xl p-6">
+      <h2 class="text-xl font-semibold text-sky-700 mb-4">Historique des Mesures</h2>
+      <div class="overflow-auto rounded-lg">
+        <table class="min-w-full table-auto border-collapse">
+          <thead class="bg-sky-700 text-white text-left">
+            <tr>
+              <th class="px-4 py-2">Horodatage</th>
+              <th class="px-4 py-2">Débit (Mbps)</th>
+              <th class="px-4 py-2">État</th>
+              <th class="px-4 py-2">Action</th>
+            </tr>
+          </thead>
+          <tbody id="dataTable" class="text-gray-700 divide-y divide-gray-200"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>`;
+
   let chart;
   let rawData = [];
   let filteredData = [];
@@ -135,18 +129,13 @@
           <tr>
             <td class="px-4 py-2 whitespace-nowrap">${new Date(d.timestamp).toLocaleString()}</td>
             <td class="px-4 py-2 font-semibold">${speed}</td>
-            <td class="px-4 py-2">
-              <span class="px-2 py-1 rounded-full text-sm font-medium ${badgeClass}">${label}</span>
-            </td>
-            <td class="px-4 py-2 text-right">
-              <button data-ts="${d.timestamp}" class="delete-entry text-red-600 hover:underline">Supprimer</button>
-            </td>
+            <td class="px-4 py-2"><span class="px-2 py-1 rounded-full text-sm font-medium ${badgeClass}">${label}</span></td>
+            <td class="px-4 py-2 text-right"><button data-ts="${d.timestamp}" class="delete-entry text-red-600 hover:underline">Supprimer</button></td>
           </tr>`;
       }).join('');
 
       $('#dataTable').html(tableRows);
 
-      // Statistiques globales
       const count = rawData.length;
       document.getElementById('stat-count').textContent = count;
       if (count > 0) {
@@ -167,7 +156,7 @@
       else if (speed >= 30) state = 'Moyen';
       return [new Date(row.timestamp).toLocaleString(), speed, state];
     });
-    const csv = [header, ...rows].map(row => row.map(cell => `"${cell}"`).join(";")).join("\r\n");
+    const csv = [header, ...rows].map(row => row.map(cell => `"${cell}"`).join(';')).join('\r\n');
     const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
@@ -239,6 +228,4 @@
 
   setInterval(updateData, 5000);
   updateData();
-</script>
-</body>
-</html>
+});
