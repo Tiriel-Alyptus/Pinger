@@ -6,12 +6,13 @@
     "start": "node server.mjs"
   },
   "dependencies": {
-    "axios": "^1.5.0",
-    "cheerio": "^1.0.0-rc.12",
     "acorn": "^8.10.0",
     "acorn-walk": "^8.2.0",
+    "axios": "^1.5.0",
     "chalk": "^5.2.0",
+    "cheerio": "^1.0.0-rc.12",
     "console-clear": "^1.1.1",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "fast-speedtest-api": "^0.3.2"
   }
 }

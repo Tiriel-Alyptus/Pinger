@@ -1422,5 +1422,21 @@
   {
     "timestamp": "2025-07-02T14:12:10.956Z",
     "download_mbps": 40
+  },
+  {
+    "timestamp": "2025-07-02T14:13:08.178Z",
+    "download_mbps": 45
+  },
+  {
+    "timestamp": "2025-07-02T14:14:09.010Z",
+    "download_mbps": 43
+  },
+  {
+    "timestamp": "2025-07-02T14:17:14.425Z",
+    "download_mbps": 70.94272
+  },
+  {
+    "timestamp": "2025-07-02T14:23:12.811Z",
+    "download_mbps": 64.3072
   }
 ]
