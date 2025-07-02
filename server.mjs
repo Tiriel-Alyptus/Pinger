@@ -11,7 +11,26 @@ const PORT = 5000;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-app.use(express.static(path.join(__dirname, "public"))); // <-- ton HTML doit être dans ./public
+app.use(express.static(path.join(__dirname, "public")));
+
+// Page principale générée via JS
+app.get("/", (req, res) => {
+  res.type("html").send(`<!DOCTYPE html>
+  <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinger</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.tailwindcss.com/4"></script>
+  </head>
+  <body class="bg-gradient-to-tr from-sky-50 to-white min-h-screen">
+    <div id="app"></div>
+    <script type="module" src="/app.js"></script>
+  </body>
+  </html>`);
+});
 
 app.use(express.json());
 
