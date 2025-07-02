@@ -3,6 +3,7 @@ import { runTest } from "./index.mjs";
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import os from "os";
 
 const app = express();
 const PORT = 5000;
@@ -67,6 +68,20 @@ app.get("/speedtest-file", (req, res) => {
   res.end(buffer);
 });
 
-app.listen(PORT, () => {
-  console.log(`🌐 Interface disponible sur http://localhost:${PORT}`);
+function getLocalIP() {
+  const interfaces = os.networkInterfaces();
+  for (const name of Object.keys(interfaces)) {
+    for (const iface of interfaces[name]) {
+      if (iface.family === "IPv4" && !iface.internal) {
+        return iface.address;
+      }
+    }
+  }
+  return "127.0.0.1";
+}
+
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`🌐 Interface disponible sur :
+  → http://localhost:${PORT}
+  → http://${getLocalIP()}:${PORT}`);
 });
