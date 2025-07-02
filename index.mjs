@@ -1,4 +1,3 @@
-// index.mjs
 import { load } from 'cheerio';
 import axios from 'axios';
 import { parse } from 'acorn';
@@ -7,8 +6,13 @@ import { performance } from 'node:perf_hooks';
 import clear from 'console-clear';
 import fs from 'fs';
 
+// Création d'une instance Axios avec redirections limitées
+const instance = axios.create({
+  maxRedirects: 5
+});
+
 async function parseToken(scriptPath) {
-  const { data: script } = await axios.get(scriptPath, { responseType: 'text' });
+  const { data: script } = await instance.get(scriptPath, { responseType: 'text' });
   const result = parse(script, { ecmaVersion: 2022 });
 
   return new Promise((resolve) => {
@@ -29,12 +33,12 @@ export async function runTest() {
   console.log("🚀 FAST.COM - Démarrage du test de débit...");
 
   try {
-    const { data } = await axios.get("https://fast.com/");
+    const { data } = await instance.get("https://fast.com/");
     const $ = load(data);
     const scriptSrc = $("script[src]").first().attr("src");
     const token = await parseToken(new URL(scriptSrc, "https://fast.com/"));
 
-    const { data: { targets } } = await axios.get(
+    const { data: { targets } } = await instance.get(
       `https://api.fast.com/netflix/speedtest/v2?https=true&token=${token}&urlCount=5`
     );
 
@@ -46,7 +50,7 @@ export async function runTest() {
     const results = await Promise.all(
       targets.map(async ({ url }) => {
         return new Promise((resolve) => {
-          axios.get(url, { responseType: 'stream', signal: controller.signal }).then(({ data: stream }) => {
+          instance.get(url, { responseType: 'stream', signal: controller.signal }).then(({ data: stream }) => {
             stream.on('data', buffer => {
               bytes += buffer.length;
               const now = Date.now();

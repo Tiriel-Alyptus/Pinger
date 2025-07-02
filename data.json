@@ -1,350 +1,1422 @@
 [
   {
-    "timestamp": "2025-06-17T10:20:42.305Z",
-    "download_mbps": 6
+    "timestamp": "2025-07-02T08:22:15.758Z",
+    "download_mbps": 18
   },
   {
-    "timestamp": "2025-06-17T11:23:21.380Z",
-    "download_mbps": 72
+    "timestamp": "2025-07-02T08:24:16.850Z",
+    "download_mbps": 9
   },
   {
-    "timestamp": "2025-06-17T11:25:05.872Z",
-    "download_mbps": 74
+    "timestamp": "2025-07-02T08:25:12.084Z",
+    "download_mbps": 8
   },
   {
-    "timestamp": "2025-06-17T11:26:05.302Z",
-    "download_mbps": 63
+    "timestamp": "2025-07-02T08:26:21.420Z",
+    "download_mbps": 7
   },
   {
-    "timestamp": "2025-06-17T11:27:06.321Z",
-    "download_mbps": 67
+    "timestamp": "2025-07-02T08:27:18.078Z",
+    "download_mbps": 7
   },
   {
-    "timestamp": "2025-06-17T11:28:07.342Z",
-    "download_mbps": 73
+    "timestamp": "2025-07-02T08:28:16.715Z",
+    "download_mbps": 7
   },
   {
-    "timestamp": "2025-06-17T11:29:05.174Z",
-    "download_mbps": 62
+    "timestamp": "2025-07-02T08:29:17.045Z",
+    "download_mbps": 7
   },
   {
-    "timestamp": "2025-06-17T11:30:03.958Z",
-    "download_mbps": 74
+    "timestamp": "2025-07-02T08:30:12.011Z",
+    "download_mbps": 7
   },
   {
-    "timestamp": "2025-06-17T11:31:07.639Z",
-    "download_mbps": 58
+    "timestamp": "2025-07-02T08:30:43.440Z",
+    "download_mbps": 9
   },
   {
-    "timestamp": "2025-06-17T11:32:06.211Z",
-    "download_mbps": 72
+    "timestamp": "2025-07-02T08:31:09.012Z",
+    "download_mbps": 10
   },
   {
-    "timestamp": "2025-06-17T11:33:06.081Z",
-    "download_mbps": 64
+    "timestamp": "2025-07-02T08:31:48.664Z",
+    "download_mbps": 13
   },
   {
-    "timestamp": "2025-06-17T11:34:07.736Z",
-    "download_mbps": 54
+    "timestamp": "2025-07-02T08:31:53.632Z",
+    "download_mbps": 17
   },
   {
-    "timestamp": "2025-06-17T11:35:16.382Z",
-    "download_mbps": 34
+    "timestamp": "2025-07-02T08:32:40.675Z",
+    "download_mbps": 14
   },
   {
-    "timestamp": "2025-06-17T11:36:06.163Z",
-    "download_mbps": 58
+    "timestamp": "2025-07-02T08:33:04.791Z",
+    "download_mbps": 16
   },
   {
-    "timestamp": "2025-06-17T11:37:08.142Z",
-    "download_mbps": 50
+    "timestamp": "2025-07-02T08:33:17.174Z",
+    "download_mbps": 17
   },
   {
-    "timestamp": "2025-06-17T11:38:09.534Z",
-    "download_mbps": 55
+    "timestamp": "2025-07-02T08:33:24.217Z",
+    "download_mbps": 16
   },
   {
-    "timestamp": "2025-06-17T11:39:04.873Z",
-    "download_mbps": 72
-  },
-  {
-    "timestamp": "2025-06-17T11:40:05.298Z",
-    "download_mbps": 71
-  },
-  {
-    "timestamp": "2025-06-17T11:41:09.526Z",
-    "download_mbps": 59
-  },
-  {
-    "timestamp": "2025-06-17T11:42:06.463Z",
-    "download_mbps": 66
-  },
-  {
-    "timestamp": "2025-06-17T11:43:09.333Z",
-    "download_mbps": 55
-  },
-  {
-    "timestamp": "2025-06-17T11:44:08.408Z",
-    "download_mbps": 57
-  },
-  {
-    "timestamp": "2025-06-17T11:45:07.266Z",
-    "download_mbps": 63
-  },
-  {
-    "timestamp": "2025-06-17T11:46:05.622Z",
-    "download_mbps": 70
-  },
-  {
-    "timestamp": "2025-06-17T11:47:06.000Z",
-    "download_mbps": 64
-  },
-  {
-    "timestamp": "2025-06-17T11:48:02.883Z",
-    "download_mbps": 78
-  },
-  {
-    "timestamp": "2025-06-17T11:49:10.222Z",
-    "download_mbps": 50
-  },
-  {
-    "timestamp": "2025-06-17T11:50:07.256Z",
-    "download_mbps": 67
-  },
-  {
-    "timestamp": "2025-06-17T11:51:05.282Z",
-    "download_mbps": 75
-  },
-  {
-    "timestamp": "2025-06-17T11:52:05.452Z",
-    "download_mbps": 76
-  },
-  {
-    "timestamp": "2025-06-17T11:53:10.296Z",
-    "download_mbps": 49
-  },
-  {
-    "timestamp": "2025-06-17T11:54:08.927Z",
-    "download_mbps": 59
-  },
-  {
-    "timestamp": "2025-06-17T11:55:07.715Z",
-    "download_mbps": 71
-  },
-  {
-    "timestamp": "2025-06-17T11:56:06.772Z",
-    "download_mbps": 59
-  },
-  {
-    "timestamp": "2025-06-17T11:57:03.647Z",
-    "download_mbps": 66
-  },
-  {
-    "timestamp": "2025-06-17T11:58:06.999Z",
-    "download_mbps": 71
-  },
-  {
-    "timestamp": "2025-06-17T11:59:09.676Z",
-    "download_mbps": 59
-  },
-  {
-    "timestamp": "2025-06-17T12:00:04.371Z",
-    "download_mbps": 74
-  },
-  {
-    "timestamp": "2025-06-17T12:01:04.519Z",
-    "download_mbps": 62
-  },
-  {
-    "timestamp": "2025-06-17T12:02:09.660Z",
-    "download_mbps": 52
-  },
-  {
-    "timestamp": "2025-06-17T12:03:05.259Z",
-    "download_mbps": 61
-  },
-  {
-    "timestamp": "2025-06-17T12:04:08.532Z",
-    "download_mbps": 58
-  },
-  {
-    "timestamp": "2025-06-17T12:05:08.029Z",
-    "download_mbps": 62
-  },
-  {
-    "timestamp": "2025-06-17T12:06:07.435Z",
-    "download_mbps": 55
-  },
-  {
-    "timestamp": "2025-06-17T12:07:09.831Z",
-    "download_mbps": 40
-  },
-  {
-    "timestamp": "2025-06-17T12:08:07.885Z",
-    "download_mbps": 61
-  },
-  {
-    "timestamp": "2025-06-17T12:09:07.387Z",
-    "download_mbps": 69
-  },
-  {
-    "timestamp": "2025-06-17T12:10:04.614Z",
-    "download_mbps": 72
-  },
-  {
-    "timestamp": "2025-06-17T12:11:06.749Z",
-    "download_mbps": 73
-  },
-  {
-    "timestamp": "2025-06-17T12:12:07.821Z",
-    "download_mbps": 65
-  },
-  {
-    "timestamp": "2025-06-17T12:13:05.372Z",
-    "download_mbps": 63
-  },
-  {
-    "timestamp": "2025-06-17T12:14:08.318Z",
-    "download_mbps": 43
-  },
-  {
-    "timestamp": "2025-06-17T12:15:12.632Z",
-    "download_mbps": 36
-  },
-  {
-    "timestamp": "2025-06-17T12:16:13.430Z",
-    "download_mbps": 35
-  },
-  {
-    "timestamp": "2025-06-17T12:17:08.481Z",
-    "download_mbps": 55
-  },
-  {
-    "timestamp": "2025-06-17T12:18:03.179Z",
-    "download_mbps": 72
-  },
-  {
-    "timestamp": "2025-06-17T12:19:06.221Z",
-    "download_mbps": 65
-  },
-  {
-    "timestamp": "2025-06-17T12:20:05.123Z",
-    "download_mbps": 75
-  },
-  {
-    "timestamp": "2025-06-17T12:21:05.919Z",
-    "download_mbps": 64
-  },
-  {
-    "timestamp": "2025-06-17T12:22:05.418Z",
-    "download_mbps": 67
-  },
-  {
-    "timestamp": "2025-06-17T12:23:04.344Z",
-    "download_mbps": 73
-  },
-  {
-    "timestamp": "2025-06-17T12:24:04.617Z",
-    "download_mbps": 77
-  },
-  {
-    "timestamp": "2025-06-17T12:25:07.064Z",
-    "download_mbps": 70
-  },
-  {
-    "timestamp": "2025-06-17T12:26:02.940Z",
-    "download_mbps": 77
-  },
-  {
-    "timestamp": "2025-06-17T12:27:07.084Z",
-    "download_mbps": 66
-  },
-  {
-    "timestamp": "2025-06-17T12:28:04.445Z",
-    "download_mbps": 70
-  },
-  {
-    "timestamp": "2025-06-17T12:29:07.091Z",
-    "download_mbps": 71
-  },
-  {
-    "timestamp": "2025-06-17T12:30:12.201Z",
-    "download_mbps": 42
-  },
-  {
-    "timestamp": "2025-06-17T12:31:05.652Z",
-    "download_mbps": 59
-  },
-  {
-    "timestamp": "2025-06-17T12:32:10.179Z",
-    "download_mbps": 54
-  },
-  {
-    "timestamp": "2025-06-17T12:33:07.935Z",
-    "download_mbps": 53
-  },
-  {
-    "timestamp": "2025-06-17T12:34:06.096Z",
-    "download_mbps": 58
-  },
-  {
-    "timestamp": "2025-06-17T12:35:03.592Z",
-    "download_mbps": 75
-  },
-  {
-    "timestamp": "2025-06-17T12:36:06.024Z",
-    "download_mbps": 76
-  },
-  {
-    "timestamp": "2025-06-17T12:37:03.927Z",
-    "download_mbps": 75
-  },
-  {
-    "timestamp": "2025-06-17T12:38:03.699Z",
-    "download_mbps": 76
-  },
-  {
-    "timestamp": "2025-06-17T12:39:06.203Z",
-    "download_mbps": 78
-  },
-  {
-    "timestamp": "2025-06-17T12:40:04.808Z",
-    "download_mbps": 74
-  },
-  {
-    "timestamp": "2025-06-17T12:41:06.048Z",
-    "download_mbps": 73
-  },
-  {
-    "timestamp": "2025-06-17T12:42:05.998Z",
-    "download_mbps": 72
-  },
-  {
-    "timestamp": "2025-06-17T12:43:04.957Z",
-    "download_mbps": 76
-  },
-  {
-    "timestamp": "2025-07-01T08:36:52.624Z",
-    "download_mbps": 28
-  },
-  {
-    "timestamp": "2025-07-01T08:37:51.109Z",
-    "download_mbps": 29
-  },
-  {
-    "timestamp": "2025-07-01T08:39:10.139Z",
-    "download_mbps": 19
-  },
-  {
-    "timestamp": "2025-07-01T08:40:33.767Z",
+    "timestamp": "2025-07-02T08:35:04.718Z",
     "download_mbps": 11
   },
   {
-    "timestamp": "2025-07-01T08:43:03.527Z",
-    "download_mbps": 5
+    "timestamp": "2025-07-02T08:35:49.935Z",
+    "download_mbps": 12
   },
   {
-    "timestamp": "2025-07-01T08:51:51.279Z",
-    "download_mbps": 5
+    "timestamp": "2025-07-02T08:36:41.663Z",
+    "download_mbps": 13
+  },
+  {
+    "timestamp": "2025-07-02T08:37:12.128Z",
+    "download_mbps": 18
+  },
+  {
+    "timestamp": "2025-07-02T08:37:40.541Z",
+    "download_mbps": 33
+  },
+  {
+    "timestamp": "2025-07-02T08:38:41.481Z",
+    "download_mbps": 32
+  },
+  {
+    "timestamp": "2025-07-02T08:39:41.554Z",
+    "download_mbps": 33
+  },
+  {
+    "timestamp": "2025-07-02T08:40:48.040Z",
+    "download_mbps": 28
+  },
+  {
+    "timestamp": "2025-07-02T08:41:36.453Z",
+    "download_mbps": 38
+  },
+  {
+    "timestamp": "2025-07-02T08:42:33.356Z",
+    "download_mbps": 42
+  },
+  {
+    "timestamp": "2025-07-02T08:43:35.306Z",
+    "download_mbps": 39
+  },
+  {
+    "timestamp": "2025-07-02T08:44:35.470Z",
+    "download_mbps": 38
+  },
+  {
+    "timestamp": "2025-07-02T08:45:37.280Z",
+    "download_mbps": 36
+  },
+  {
+    "timestamp": "2025-07-02T08:46:37.924Z",
+    "download_mbps": 35
+  },
+  {
+    "timestamp": "2025-07-02T08:47:34.514Z",
+    "download_mbps": 40
+  },
+  {
+    "timestamp": "2025-07-02T08:48:34.406Z",
+    "download_mbps": 40
+  },
+  {
+    "timestamp": "2025-07-02T08:50:16.587Z",
+    "download_mbps": 18
+  },
+  {
+    "timestamp": "2025-07-02T08:51:04.394Z",
+    "download_mbps": 20
+  },
+  {
+    "timestamp": "2025-07-02T08:51:35.640Z",
+    "download_mbps": 39
+  },
+  {
+    "timestamp": "2025-07-02T08:52:34.589Z",
+    "download_mbps": 40
+  },
+  {
+    "timestamp": "2025-07-02T08:53:34.582Z",
+    "download_mbps": 40
+  },
+  {
+    "timestamp": "2025-07-02T08:54:46.265Z",
+    "download_mbps": 30
+  },
+  {
+    "timestamp": "2025-07-02T08:55:35.260Z",
+    "download_mbps": 39
+  },
+  {
+    "timestamp": "2025-07-02T08:56:32.740Z",
+    "download_mbps": 43
+  },
+  {
+    "timestamp": "2025-07-02T08:57:29.673Z",
+    "download_mbps": 48
+  },
+  {
+    "timestamp": "2025-07-02T08:58:35.868Z",
+    "download_mbps": 38
+  },
+  {
+    "timestamp": "2025-07-02T08:59:32.513Z",
+    "download_mbps": 43
+  },
+  {
+    "timestamp": "2025-07-02T09:00:28.707Z",
+    "download_mbps": 51
+  },
+  {
+    "timestamp": "2025-07-02T09:01:30.168Z",
+    "download_mbps": 47
+  },
+  {
+    "timestamp": "2025-07-02T09:02:48.601Z",
+    "download_mbps": 27
+  },
+  {
+    "timestamp": "2025-07-02T09:03:30.456Z",
+    "download_mbps": 46
+  },
+  {
+    "timestamp": "2025-07-02T09:04:30.042Z",
+    "download_mbps": 48
+  },
+  {
+    "timestamp": "2025-07-02T09:05:37.529Z",
+    "download_mbps": 36
+  },
+  {
+    "timestamp": "2025-07-02T09:06:36.466Z",
+    "download_mbps": 38
+  },
+  {
+    "timestamp": "2025-07-02T09:07:29.566Z",
+    "download_mbps": 49
+  },
+  {
+    "timestamp": "2025-07-02T09:08:36.175Z",
+    "download_mbps": 39
+  },
+  {
+    "timestamp": "2025-07-02T09:09:31.499Z",
+    "download_mbps": 45
+  },
+  {
+    "timestamp": "2025-07-02T09:10:42.374Z",
+    "download_mbps": 32
+  },
+  {
+    "timestamp": "2025-07-02T09:11:35.575Z",
+    "download_mbps": 38
+  },
+  {
+    "timestamp": "2025-07-02T09:12:36.726Z",
+    "download_mbps": 37
+  },
+  {
+    "timestamp": "2025-07-02T09:13:33.537Z",
+    "download_mbps": 42
+  },
+  {
+    "timestamp": "2025-07-02T09:14:39.821Z",
+    "download_mbps": 36
+  },
+  {
+    "timestamp": "2025-07-02T09:15:32.460Z",
+    "download_mbps": 43
+  },
+  {
+    "timestamp": "2025-07-02T09:16:29.245Z",
+    "download_mbps": 51
+  },
+  {
+    "timestamp": "2025-07-02T09:17:32.329Z",
+    "download_mbps": 44
+  },
+  {
+    "timestamp": "2025-07-02T09:18:30.373Z",
+    "download_mbps": 47
+  },
+  {
+    "timestamp": "2025-07-02T09:19:32.301Z",
+    "download_mbps": 44
+  },
+  {
+    "timestamp": "2025-07-02T09:20:45.528Z",
+    "download_mbps": 30
+  },
+  {
+    "timestamp": "2025-07-02T09:21:33.864Z",
+    "download_mbps": 41
+  },
+  {
+    "timestamp": "2025-07-02T09:22:45.860Z",
+    "download_mbps": 30
+  },
+  {
+    "timestamp": "2025-07-02T09:23:32.792Z",
+    "download_mbps": 43
+  },
+  {
+    "timestamp": "2025-07-02T09:24:28.190Z",
+    "download_mbps": 52
+  },
+  {
+    "timestamp": "2025-07-02T09:25:26.834Z",
+    "download_mbps": 55
+  },
+  {
+    "timestamp": "2025-07-02T09:26:36.636Z",
+    "download_mbps": 38
+  },
+  {
+    "timestamp": "2025-07-02T09:27:32.687Z",
+    "download_mbps": 43
+  },
+  {
+    "timestamp": "2025-07-02T09:28:30.978Z",
+    "download_mbps": 46
+  },
+  {
+    "timestamp": "2025-07-02T09:29:35.130Z",
+    "download_mbps": 40
+  },
+  {
+    "timestamp": "2025-07-02T09:30:34.636Z",
+    "download_mbps": 41
+  },
+  {
+    "timestamp": "2025-07-02T09:31:30.786Z",
+    "download_mbps": 47
+  },
+  {
+    "timestamp": "2025-07-02T09:32:34.290Z",
+    "download_mbps": 40
+  },
+  {
+    "timestamp": "2025-07-02T09:33:37.034Z",
+    "download_mbps": 37
+  },
+  {
+    "timestamp": "2025-07-02T09:34:37.992Z",
+    "download_mbps": 36
+  },
+  {
+    "timestamp": "2025-07-02T09:35:40.858Z",
+    "download_mbps": 35
+  },
+  {
+    "timestamp": "2025-07-02T09:36:36.517Z",
+    "download_mbps": 39
+  },
+  {
+    "timestamp": "2025-07-02T09:37:33.752Z",
+    "download_mbps": 41
+  },
+  {
+    "timestamp": "2025-07-02T09:38:35.443Z",
+    "download_mbps": 39
+  },
+  {
+    "timestamp": "2025-07-02T09:39:43.023Z",
+    "download_mbps": 32
+  },
+  {
+    "timestamp": "2025-07-02T09:40:45.157Z",
+    "download_mbps": 30
+  },
+  {
+    "timestamp": "2025-07-02T09:41:36.613Z",
+    "download_mbps": 38
+  },
+  {
+    "timestamp": "2025-07-02T09:42:35.335Z",
+    "download_mbps": 39
+  },
+  {
+    "timestamp": "2025-07-02T09:43:59.420Z",
+    "download_mbps": 25
+  },
+  {
+    "timestamp": "2025-07-02T09:46:46.955Z",
+    "download_mbps": 8
+  },
+  {
+    "timestamp": "2025-07-02T09:47:42.354Z",
+    "download_mbps": 8
+  },
+  {
+    "timestamp": "2025-07-02T09:49:33.084Z",
+    "download_mbps": 7
+  },
+  {
+    "timestamp": "2025-07-02T09:50:41.462Z",
+    "download_mbps": 7
+  },
+  {
+    "timestamp": "2025-07-02T09:51:49.830Z",
+    "download_mbps": 6
+  },
+  {
+    "timestamp": "2025-07-02T09:52:46.626Z",
+    "download_mbps": 6
+  },
+  {
+    "timestamp": "2025-07-02T09:53:47.403Z",
+    "download_mbps": 6
+  },
+  {
+    "timestamp": "2025-07-02T09:54:29.860Z",
+    "download_mbps": 7
+  },
+  {
+    "timestamp": "2025-07-02T09:55:04.272Z",
+    "download_mbps": 7
+  },
+  {
+    "timestamp": "2025-07-02T09:55:42.361Z",
+    "download_mbps": 8
+  },
+  {
+    "timestamp": "2025-07-02T09:56:36.913Z",
+    "download_mbps": 9
+  },
+  {
+    "timestamp": "2025-07-02T09:57:33.890Z",
+    "download_mbps": 9
+  },
+  {
+    "timestamp": "2025-07-02T09:58:24.300Z",
+    "download_mbps": 9
+  },
+  {
+    "timestamp": "2025-07-02T09:59:13.255Z",
+    "download_mbps": 10
+  },
+  {
+    "timestamp": "2025-07-02T10:00:02.001Z",
+    "download_mbps": 11
+  },
+  {
+    "timestamp": "2025-07-02T10:00:55.044Z",
+    "download_mbps": 12
+  },
+  {
+    "timestamp": "2025-07-02T10:01:38.062Z",
+    "download_mbps": 13
+  },
+  {
+    "timestamp": "2025-07-02T10:02:20.914Z",
+    "download_mbps": 16
+  },
+  {
+    "timestamp": "2025-07-02T10:03:08.854Z",
+    "download_mbps": 19
+  },
+  {
+    "timestamp": "2025-07-02T10:04:12.959Z",
+    "download_mbps": 18
+  },
+  {
+    "timestamp": "2025-07-02T10:05:07.065Z",
+    "download_mbps": 19
+  },
+  {
+    "timestamp": "2025-07-02T10:06:47.765Z",
+    "download_mbps": 12
+  },
+  {
+    "timestamp": "2025-07-02T10:07:34.967Z",
+    "download_mbps": 14
+  },
+  {
+    "timestamp": "2025-07-02T10:08:33.712Z",
+    "download_mbps": 14
+  },
+  {
+    "timestamp": "2025-07-02T10:09:28.289Z",
+    "download_mbps": 15
+  },
+  {
+    "timestamp": "2025-07-02T10:10:22.662Z",
+    "download_mbps": 16
+  },
+  {
+    "timestamp": "2025-07-02T10:11:58.175Z",
+    "download_mbps": 12
+  },
+  {
+    "timestamp": "2025-07-02T10:12:59.296Z",
+    "download_mbps": 11
+  },
+  {
+    "timestamp": "2025-07-02T10:13:48.098Z",
+    "download_mbps": 12
+  },
+  {
+    "timestamp": "2025-07-02T10:14:40.770Z",
+    "download_mbps": 13
+  },
+  {
+    "timestamp": "2025-07-02T10:15:27.708Z",
+    "download_mbps": 15
+  },
+  {
+    "timestamp": "2025-07-02T10:16:07.843Z",
+    "download_mbps": 20
+  },
+  {
+    "timestamp": "2025-07-02T10:17:03.879Z",
+    "download_mbps": 21
+  },
+  {
+    "timestamp": "2025-07-02T10:18:06.559Z",
+    "download_mbps": 20
+  },
+  {
+    "timestamp": "2025-07-02T10:18:59.307Z",
+    "download_mbps": 22
+  },
+  {
+    "timestamp": "2025-07-02T10:20:03.204Z",
+    "download_mbps": 21
+  },
+  {
+    "timestamp": "2025-07-02T10:21:02.645Z",
+    "download_mbps": 21
+  },
+  {
+    "timestamp": "2025-07-02T10:21:47.847Z",
+    "download_mbps": 29
+  },
+  {
+    "timestamp": "2025-07-02T10:23:02.682Z",
+    "download_mbps": 21
+  },
+  {
+    "timestamp": "2025-07-02T10:23:58.566Z",
+    "download_mbps": 22
+  },
+  {
+    "timestamp": "2025-07-02T10:24:31.256Z",
+    "download_mbps": 46
+  },
+  {
+    "timestamp": "2025-07-02T10:25:34.187Z",
+    "download_mbps": 41
+  },
+  {
+    "timestamp": "2025-07-02T10:26:33.489Z",
+    "download_mbps": 43
+  },
+  {
+    "timestamp": "2025-07-02T10:27:32.584Z",
+    "download_mbps": 44
+  },
+  {
+    "timestamp": "2025-07-02T10:28:28.653Z",
+    "download_mbps": 52
+  },
+  {
+    "timestamp": "2025-07-02T10:29:39.211Z",
+    "download_mbps": 36
+  },
+  {
+    "timestamp": "2025-07-02T10:30:29.633Z",
+    "download_mbps": 49
+  },
+  {
+    "timestamp": "2025-07-02T10:31:31.422Z",
+    "download_mbps": 47
+  },
+  {
+    "timestamp": "2025-07-02T10:32:32.282Z",
+    "download_mbps": 45
+  },
+  {
+    "timestamp": "2025-07-02T10:33:31.703Z",
+    "download_mbps": 45
+  },
+  {
+    "timestamp": "2025-07-02T10:34:34.211Z",
+    "download_mbps": 42
+  },
+  {
+    "timestamp": "2025-07-02T10:35:29.112Z",
+    "download_mbps": 51
+  },
+  {
+    "timestamp": "2025-07-02T10:36:30.009Z",
+    "download_mbps": 49
+  },
+  {
+    "timestamp": "2025-07-02T10:37:28.785Z",
+    "download_mbps": 52
+  },
+  {
+    "timestamp": "2025-07-02T10:38:35.211Z",
+    "download_mbps": 41
+  },
+  {
+    "timestamp": "2025-07-02T10:39:32.603Z",
+    "download_mbps": 44
+  },
+  {
+    "timestamp": "2025-07-02T10:40:33.461Z",
+    "download_mbps": 43
+  },
+  {
+    "timestamp": "2025-07-02T10:41:34.160Z",
+    "download_mbps": 42
+  },
+  {
+    "timestamp": "2025-07-02T10:42:28.523Z",
+    "download_mbps": 52
+  },
+  {
+    "timestamp": "2025-07-02T10:43:33.895Z",
+    "download_mbps": 42
+  },
+  {
+    "timestamp": "2025-07-02T10:44:32.708Z",
+    "download_mbps": 44
+  },
+  {
+    "timestamp": "2025-07-02T10:45:32.848Z",
+    "download_mbps": 44
+  },
+  {
+    "timestamp": "2025-07-02T10:46:37.747Z",
+    "download_mbps": 37
+  },
+  {
+    "timestamp": "2025-07-02T10:47:33.001Z",
+    "download_mbps": 44
+  },
+  {
+    "timestamp": "2025-07-02T10:48:33.929Z",
+    "download_mbps": 43
+  },
+  {
+    "timestamp": "2025-07-02T10:49:35.675Z",
+    "download_mbps": 39
+  },
+  {
+    "timestamp": "2025-07-02T10:50:31.209Z",
+    "download_mbps": 47
+  },
+  {
+    "timestamp": "2025-07-02T10:51:37.264Z",
+    "download_mbps": 37
+  },
+  {
+    "timestamp": "2025-07-02T10:52:34.638Z",
+    "download_mbps": 41
+  },
+  {
+    "timestamp": "2025-07-02T10:53:30.575Z",
+    "download_mbps": 48
+  },
+  {
+    "timestamp": "2025-07-02T10:54:26.595Z",
+    "download_mbps": 57
+  },
+  {
+    "timestamp": "2025-07-02T10:55:27.544Z",
+    "download_mbps": 55
+  },
+  {
+    "timestamp": "2025-07-02T10:56:34.687Z",
+    "download_mbps": 42
+  },
+  {
+    "timestamp": "2025-07-02T10:57:28.568Z",
+    "download_mbps": 53
+  },
+  {
+    "timestamp": "2025-07-02T10:58:30.787Z",
+    "download_mbps": 47
+  },
+  {
+    "timestamp": "2025-07-02T10:59:31.144Z",
+    "download_mbps": 47
+  },
+  {
+    "timestamp": "2025-07-02T11:00:35.012Z",
+    "download_mbps": 42
+  },
+  {
+    "timestamp": "2025-07-02T11:01:37.218Z",
+    "download_mbps": 38
+  },
+  {
+    "timestamp": "2025-07-02T11:02:31.930Z",
+    "download_mbps": 45
+  },
+  {
+    "timestamp": "2025-07-02T11:03:32.137Z",
+    "download_mbps": 45
+  },
+  {
+    "timestamp": "2025-07-02T11:04:37.011Z",
+    "download_mbps": 38
+  },
+  {
+    "timestamp": "2025-07-02T11:05:37.575Z",
+    "download_mbps": 38
+  },
+  {
+    "timestamp": "2025-07-02T11:06:34.172Z",
+    "download_mbps": 43
+  },
+  {
+    "timestamp": "2025-07-02T11:07:33.424Z",
+    "download_mbps": 43
+  },
+  {
+    "timestamp": "2025-07-02T11:08:31.399Z",
+    "download_mbps": 47
+  },
+  {
+    "timestamp": "2025-07-02T11:09:32.170Z",
+    "download_mbps": 45
+  },
+  {
+    "timestamp": "2025-07-02T11:10:40.817Z",
+    "download_mbps": 35
+  },
+  {
+    "timestamp": "2025-07-02T11:11:34.032Z",
+    "download_mbps": 43
+  },
+  {
+    "timestamp": "2025-07-02T11:12:28.493Z",
+    "download_mbps": 54
+  },
+  {
+    "timestamp": "2025-07-02T11:13:36.634Z",
+    "download_mbps": 38
+  },
+  {
+    "timestamp": "2025-07-02T11:14:35.015Z",
+    "download_mbps": 41
+  },
+  {
+    "timestamp": "2025-07-02T11:15:33.389Z",
+    "download_mbps": 43
+  },
+  {
+    "timestamp": "2025-07-02T11:16:30.151Z",
+    "download_mbps": 49
+  },
+  {
+    "timestamp": "2025-07-02T11:17:31.104Z",
+    "download_mbps": 47
+  },
+  {
+    "timestamp": "2025-07-02T11:18:32.382Z",
+    "download_mbps": 46
+  },
+  {
+    "timestamp": "2025-07-02T11:19:32.644Z",
+    "download_mbps": 44
+  },
+  {
+    "timestamp": "2025-07-02T11:20:39.568Z",
+    "download_mbps": 35
+  },
+  {
+    "timestamp": "2025-07-02T11:23:03.411Z",
+    "download_mbps": 11
+  },
+  {
+    "timestamp": "2025-07-02T11:23:16.650Z",
+    "download_mbps": 17
+  },
+  {
+    "timestamp": "2025-07-02T11:23:40.579Z",
+    "download_mbps": 34
+  },
+  {
+    "timestamp": "2025-07-02T11:24:51.262Z",
+    "download_mbps": 28
+  },
+  {
+    "timestamp": "2025-07-02T11:25:37.249Z",
+    "download_mbps": 39
+  },
+  {
+    "timestamp": "2025-07-02T11:26:31.108Z",
+    "download_mbps": 47
+  },
+  {
+    "timestamp": "2025-07-02T11:27:37.257Z",
+    "download_mbps": 38
+  },
+  {
+    "timestamp": "2025-07-02T11:28:33.172Z",
+    "download_mbps": 44
+  },
+  {
+    "timestamp": "2025-07-02T11:29:29.160Z",
+    "download_mbps": 52
+  },
+  {
+    "timestamp": "2025-07-02T11:30:37.013Z",
+    "download_mbps": 39
+  },
+  {
+    "timestamp": "2025-07-02T11:31:34.004Z",
+    "download_mbps": 42
+  },
+  {
+    "timestamp": "2025-07-02T11:32:28.822Z",
+    "download_mbps": 52
+  },
+  {
+    "timestamp": "2025-07-02T11:33:33.643Z",
+    "download_mbps": 43
+  },
+  {
+    "timestamp": "2025-07-02T11:34:32.989Z",
+    "download_mbps": 44
+  },
+  {
+    "timestamp": "2025-07-02T11:35:35.058Z",
+    "download_mbps": 41
+  },
+  {
+    "timestamp": "2025-07-02T11:36:28.600Z",
+    "download_mbps": 53
+  },
+  {
+    "timestamp": "2025-07-02T11:37:27.855Z",
+    "download_mbps": 56
+  },
+  {
+    "timestamp": "2025-07-02T11:38:33.794Z",
+    "download_mbps": 43
+  },
+  {
+    "timestamp": "2025-07-02T11:39:37.752Z",
+    "download_mbps": 37
+  },
+  {
+    "timestamp": "2025-07-02T11:40:31.161Z",
+    "download_mbps": 49
+  },
+  {
+    "timestamp": "2025-07-02T11:41:28.811Z",
+    "download_mbps": 53
+  },
+  {
+    "timestamp": "2025-07-02T11:42:30.410Z",
+    "download_mbps": 49
+  },
+  {
+    "timestamp": "2025-07-02T11:43:31.246Z",
+    "download_mbps": 47
+  },
+  {
+    "timestamp": "2025-07-02T11:44:33.073Z",
+    "download_mbps": 44
+  },
+  {
+    "timestamp": "2025-07-02T11:45:40.992Z",
+    "download_mbps": 34
+  },
+  {
+    "timestamp": "2025-07-02T11:46:29.881Z",
+    "download_mbps": 50
+  },
+  {
+    "timestamp": "2025-07-02T11:47:33.405Z",
+    "download_mbps": 44
+  },
+  {
+    "timestamp": "2025-07-02T11:48:32.795Z",
+    "download_mbps": 45
+  },
+  {
+    "timestamp": "2025-07-02T11:49:41.958Z",
+    "download_mbps": 34
+  },
+  {
+    "timestamp": "2025-07-02T11:50:43.305Z",
+    "download_mbps": 32
+  },
+  {
+    "timestamp": "2025-07-02T11:51:49.871Z",
+    "download_mbps": 27
+  },
+  {
+    "timestamp": "2025-07-02T11:52:47.902Z",
+    "download_mbps": 28
+  },
+  {
+    "timestamp": "2025-07-02T11:53:48.995Z",
+    "download_mbps": 27
+  },
+  {
+    "timestamp": "2025-07-02T11:54:54.432Z",
+    "download_mbps": 25
+  },
+  {
+    "timestamp": "2025-07-02T11:55:54.914Z",
+    "download_mbps": 25
+  },
+  {
+    "timestamp": "2025-07-02T11:57:05.882Z",
+    "download_mbps": 20
+  },
+  {
+    "timestamp": "2025-07-02T11:57:52.918Z",
+    "download_mbps": 25
+  },
+  {
+    "timestamp": "2025-07-02T11:58:36.372Z",
+    "download_mbps": 39
+  },
+  {
+    "timestamp": "2025-07-02T11:59:34.695Z",
+    "download_mbps": 42
+  },
+  {
+    "timestamp": "2025-07-02T12:00:32.463Z",
+    "download_mbps": 45
+  },
+  {
+    "timestamp": "2025-07-02T12:01:32.626Z",
+    "download_mbps": 46
+  },
+  {
+    "timestamp": "2025-07-02T12:02:41.157Z",
+    "download_mbps": 34
+  },
+  {
+    "timestamp": "2025-07-02T12:03:31.871Z",
+    "download_mbps": 46
+  },
+  {
+    "timestamp": "2025-07-02T12:04:35.219Z",
+    "download_mbps": 42
+  },
+  {
+    "timestamp": "2025-07-02T12:05:36.764Z",
+    "download_mbps": 39
+  },
+  {
+    "timestamp": "2025-07-02T12:06:36.283Z",
+    "download_mbps": 39
+  },
+  {
+    "timestamp": "2025-07-02T12:07:51.604Z",
+    "download_mbps": 27
+  },
+  {
+    "timestamp": "2025-07-02T12:08:42.717Z",
+    "download_mbps": 32
+  },
+  {
+    "timestamp": "2025-07-02T12:09:37.259Z",
+    "download_mbps": 38
+  },
+  {
+    "timestamp": "2025-07-02T12:10:46.876Z",
+    "download_mbps": 29
+  },
+  {
+    "timestamp": "2025-07-02T12:11:40.786Z",
+    "download_mbps": 34
+  },
+  {
+    "timestamp": "2025-07-02T12:12:39.784Z",
+    "download_mbps": 35
+  },
+  {
+    "timestamp": "2025-07-02T12:13:40.264Z",
+    "download_mbps": 36
+  },
+  {
+    "timestamp": "2025-07-02T12:14:41.392Z",
+    "download_mbps": 34
+  },
+  {
+    "timestamp": "2025-07-02T12:15:35.301Z",
+    "download_mbps": 41
+  },
+  {
+    "timestamp": "2025-07-02T12:16:34.272Z",
+    "download_mbps": 42
+  },
+  {
+    "timestamp": "2025-07-02T12:17:36.709Z",
+    "download_mbps": 39
+  },
+  {
+    "timestamp": "2025-07-02T12:18:33.231Z",
+    "download_mbps": 44
+  },
+  {
+    "timestamp": "2025-07-02T12:19:44.370Z",
+    "download_mbps": 32
+  },
+  {
+    "timestamp": "2025-07-02T12:20:33.275Z",
+    "download_mbps": 45
+  },
+  {
+    "timestamp": "2025-07-02T12:21:31.716Z",
+    "download_mbps": 48
+  },
+  {
+    "timestamp": "2025-07-02T12:22:29.205Z",
+    "download_mbps": 53
+  },
+  {
+    "timestamp": "2025-07-02T12:23:35.728Z",
+    "download_mbps": 40
+  },
+  {
+    "timestamp": "2025-07-02T12:24:33.770Z",
+    "download_mbps": 43
+  },
+  {
+    "timestamp": "2025-07-02T12:25:38.335Z",
+    "download_mbps": 37
+  },
+  {
+    "timestamp": "2025-07-02T12:26:38.551Z",
+    "download_mbps": 37
+  },
+  {
+    "timestamp": "2025-07-02T12:27:37.688Z",
+    "download_mbps": 38
+  },
+  {
+    "timestamp": "2025-07-02T12:28:34.243Z",
+    "download_mbps": 42
+  },
+  {
+    "timestamp": "2025-07-02T12:29:33.278Z",
+    "download_mbps": 45
+  },
+  {
+    "timestamp": "2025-07-02T12:30:41.984Z",
+    "download_mbps": 33
+  },
+  {
+    "timestamp": "2025-07-02T12:31:42.317Z",
+    "download_mbps": 33
+  },
+  {
+    "timestamp": "2025-07-02T12:32:39.592Z",
+    "download_mbps": 36
+  },
+  {
+    "timestamp": "2025-07-02T12:33:45.281Z",
+    "download_mbps": 31
+  },
+  {
+    "timestamp": "2025-07-02T12:34:40.712Z",
+    "download_mbps": 34
+  },
+  {
+    "timestamp": "2025-07-02T12:35:45.151Z",
+    "download_mbps": 31
+  },
+  {
+    "timestamp": "2025-07-02T12:36:45.264Z",
+    "download_mbps": 31
+  },
+  {
+    "timestamp": "2025-07-02T12:37:44.749Z",
+    "download_mbps": 32
+  },
+  {
+    "timestamp": "2025-07-02T12:38:46.650Z",
+    "download_mbps": 30
+  },
+  {
+    "timestamp": "2025-07-02T12:39:35.303Z",
+    "download_mbps": 41
+  },
+  {
+    "timestamp": "2025-07-02T12:40:50.154Z",
+    "download_mbps": 27
+  },
+  {
+    "timestamp": "2025-07-02T12:41:46.019Z",
+    "download_mbps": 30
+  },
+  {
+    "timestamp": "2025-07-02T12:42:46.578Z",
+    "download_mbps": 30
+  },
+  {
+    "timestamp": "2025-07-02T12:43:48.256Z",
+    "download_mbps": 28
+  },
+  {
+    "timestamp": "2025-07-02T12:44:48.675Z",
+    "download_mbps": 28
+  },
+  {
+    "timestamp": "2025-07-02T12:45:53.251Z",
+    "download_mbps": 25
+  },
+  {
+    "timestamp": "2025-07-02T12:46:49.317Z",
+    "download_mbps": 28
+  },
+  {
+    "timestamp": "2025-07-02T12:47:42.054Z",
+    "download_mbps": 34
+  },
+  {
+    "timestamp": "2025-07-02T12:48:41.451Z",
+    "download_mbps": 34
+  },
+  {
+    "timestamp": "2025-07-02T12:49:43.667Z",
+    "download_mbps": 32
+  },
+  {
+    "timestamp": "2025-07-02T12:50:42.742Z",
+    "download_mbps": 33
+  },
+  {
+    "timestamp": "2025-07-02T12:51:39.449Z",
+    "download_mbps": 36
+  },
+  {
+    "timestamp": "2025-07-02T12:52:44.048Z",
+    "download_mbps": 32
+  },
+  {
+    "timestamp": "2025-07-02T12:53:41.834Z",
+    "download_mbps": 33
+  },
+  {
+    "timestamp": "2025-07-02T12:54:44.367Z",
+    "download_mbps": 31
+  },
+  {
+    "timestamp": "2025-07-02T12:55:39.867Z",
+    "download_mbps": 36
+  },
+  {
+    "timestamp": "2025-07-02T12:56:38.370Z",
+    "download_mbps": 37
+  },
+  {
+    "timestamp": "2025-07-02T12:57:38.135Z",
+    "download_mbps": 37
+  },
+  {
+    "timestamp": "2025-07-02T12:58:42.161Z",
+    "download_mbps": 34
+  },
+  {
+    "timestamp": "2025-07-02T12:59:36.119Z",
+    "download_mbps": 40
+  },
+  {
+    "timestamp": "2025-07-02T13:00:35.169Z",
+    "download_mbps": 42
+  },
+  {
+    "timestamp": "2025-07-02T13:01:36.493Z",
+    "download_mbps": 40
+  },
+  {
+    "timestamp": "2025-07-02T13:02:42.458Z",
+    "download_mbps": 33
+  },
+  {
+    "timestamp": "2025-07-02T13:03:42.321Z",
+    "download_mbps": 33
+  },
+  {
+    "timestamp": "2025-07-02T13:04:50.607Z",
+    "download_mbps": 27
+  },
+  {
+    "timestamp": "2025-07-02T13:05:37.307Z",
+    "download_mbps": 38
+  },
+  {
+    "timestamp": "2025-07-02T13:06:40.349Z",
+    "download_mbps": 36
+  },
+  {
+    "timestamp": "2025-07-02T13:07:39.662Z",
+    "download_mbps": 36
+  },
+  {
+    "timestamp": "2025-07-02T13:08:35.337Z",
+    "download_mbps": 41
+  },
+  {
+    "timestamp": "2025-07-02T13:09:36.055Z",
+    "download_mbps": 41
+  },
+  {
+    "timestamp": "2025-07-02T13:10:58.012Z",
+    "download_mbps": 23
+  },
+  {
+    "timestamp": "2025-07-02T13:11:42.349Z",
+    "download_mbps": 33
+  },
+  {
+    "timestamp": "2025-07-02T13:12:44.304Z",
+    "download_mbps": 31
+  },
+  {
+    "timestamp": "2025-07-02T13:13:43.901Z",
+    "download_mbps": 31
+  },
+  {
+    "timestamp": "2025-07-02T13:14:34.157Z",
+    "download_mbps": 43
+  },
+  {
+    "timestamp": "2025-07-02T13:15:38.980Z",
+    "download_mbps": 37
+  },
+  {
+    "timestamp": "2025-07-02T13:16:31.358Z",
+    "download_mbps": 48
+  },
+  {
+    "timestamp": "2025-07-02T13:18:16.391Z",
+    "download_mbps": 19
+  },
+  {
+    "timestamp": "2025-07-02T13:19:15.968Z",
+    "download_mbps": 18
+  },
+  {
+    "timestamp": "2025-07-02T13:20:18.546Z",
+    "download_mbps": 17
+  },
+  {
+    "timestamp": "2025-07-02T13:21:17.895Z",
+    "download_mbps": 18
+  },
+  {
+    "timestamp": "2025-07-02T13:22:16.231Z",
+    "download_mbps": 18
+  },
+  {
+    "timestamp": "2025-07-02T13:23:10.674Z",
+    "download_mbps": 20
+  },
+  {
+    "timestamp": "2025-07-02T13:24:18.631Z",
+    "download_mbps": 18
+  },
+  {
+    "timestamp": "2025-07-02T13:24:59.936Z",
+    "download_mbps": 23
+  },
+  {
+    "timestamp": "2025-07-02T13:25:35.334Z",
+    "download_mbps": 42
+  },
+  {
+    "timestamp": "2025-07-02T13:26:33.444Z",
+    "download_mbps": 45
+  },
+  {
+    "timestamp": "2025-07-02T13:27:40.546Z",
+    "download_mbps": 35
+  },
+  {
+    "timestamp": "2025-07-02T13:28:32.429Z",
+    "download_mbps": 46
+  },
+  {
+    "timestamp": "2025-07-02T13:29:31.151Z",
+    "download_mbps": 48
+  },
+  {
+    "timestamp": "2025-07-02T13:30:29.874Z",
+    "download_mbps": 51
+  },
+  {
+    "timestamp": "2025-07-02T13:31:59.632Z",
+    "download_mbps": 23
+  },
+  {
+    "timestamp": "2025-07-02T13:32:59.600Z",
+    "download_mbps": 24
+  },
+  {
+    "timestamp": "2025-07-02T13:33:45.684Z",
+    "download_mbps": 31
+  },
+  {
+    "timestamp": "2025-07-02T13:34:39.466Z",
+    "download_mbps": 37
+  },
+  {
+    "timestamp": "2025-07-02T13:35:45.868Z",
+    "download_mbps": 31
+  },
+  {
+    "timestamp": "2025-07-02T13:36:44.405Z",
+    "download_mbps": 33
+  },
+  {
+    "timestamp": "2025-07-02T13:37:53.950Z",
+    "download_mbps": 25
+  },
+  {
+    "timestamp": "2025-07-02T13:38:35.919Z",
+    "download_mbps": 40
+  },
+  {
+    "timestamp": "2025-07-02T13:39:29.980Z",
+    "download_mbps": 52
+  },
+  {
+    "timestamp": "2025-07-02T13:40:33.720Z",
+    "download_mbps": 44
+  },
+  {
+    "timestamp": "2025-07-02T13:41:33.602Z",
+    "download_mbps": 47
+  },
+  {
+    "timestamp": "2025-07-02T13:42:52.382Z",
+    "download_mbps": 27
+  },
+  {
+    "timestamp": "2025-07-02T13:43:34.496Z",
+    "download_mbps": 44
+  },
+  {
+    "timestamp": "2025-07-02T13:44:32.104Z",
+    "download_mbps": 49
+  },
+  {
+    "timestamp": "2025-07-02T13:45:38.722Z",
+    "download_mbps": 40
+  },
+  {
+    "timestamp": "2025-07-02T13:46:39.100Z",
+    "download_mbps": 37
+  },
+  {
+    "timestamp": "2025-07-02T13:47:48.183Z",
+    "download_mbps": 29
+  },
+  {
+    "timestamp": "2025-07-02T13:48:35.510Z",
+    "download_mbps": 43
+  },
+  {
+    "timestamp": "2025-07-02T13:49:36.093Z",
+    "download_mbps": 42
+  },
+  {
+    "timestamp": "2025-07-02T13:50:39.412Z",
+    "download_mbps": 37
+  },
+  {
+    "timestamp": "2025-07-02T13:51:34.897Z",
+    "download_mbps": 44
+  },
+  {
+    "timestamp": "2025-07-02T13:53:01.775Z",
+    "download_mbps": 23
+  },
+  {
+    "timestamp": "2025-07-02T13:53:36.684Z",
+    "download_mbps": 41
+  },
+  {
+    "timestamp": "2025-07-02T13:54:38.058Z",
+    "download_mbps": 39
+  },
+  {
+    "timestamp": "2025-07-02T13:55:40.765Z",
+    "download_mbps": 36
+  },
+  {
+    "timestamp": "2025-07-02T13:56:42.092Z",
+    "download_mbps": 35
+  },
+  {
+    "timestamp": "2025-07-02T13:57:34.613Z",
+    "download_mbps": 45
+  },
+  {
+    "timestamp": "2025-07-02T13:58:38.541Z",
+    "download_mbps": 40
+  },
+  {
+    "timestamp": "2025-07-02T13:59:37.413Z",
+    "download_mbps": 40
+  },
+  {
+    "timestamp": "2025-07-02T14:00:32.303Z",
+    "download_mbps": 49
+  },
+  {
+    "timestamp": "2025-07-02T14:01:41.367Z",
+    "download_mbps": 36
+  },
+  {
+    "timestamp": "2025-07-02T14:02:27.982Z",
+    "download_mbps": 60
+  },
+  {
+    "timestamp": "2025-07-02T14:03:31.822Z",
+    "download_mbps": 51
+  },
+  {
+    "timestamp": "2025-07-02T14:04:31.017Z",
+    "download_mbps": 52
+  },
+  {
+    "timestamp": "2025-07-02T14:06:05.885Z",
+    "download_mbps": 21
+  },
+  {
+    "timestamp": "2025-07-02T14:06:32.819Z",
+    "download_mbps": 49
+  },
+  {
+    "timestamp": "2025-07-02T14:07:35.316Z",
+    "download_mbps": 44
+  },
+  {
+    "timestamp": "2025-07-02T14:08:34.984Z",
+    "download_mbps": 44
+  },
+  {
+    "timestamp": "2025-07-02T14:09:33.661Z",
+    "download_mbps": 46
+  },
+  {
+    "timestamp": "2025-07-02T14:10:48.672Z",
+    "download_mbps": 30
+  },
+  {
+    "timestamp": "2025-07-02T14:11:31.208Z",
+    "download_mbps": 52
   }
 ]
